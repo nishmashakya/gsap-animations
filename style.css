@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Oriya:wght@400..700&family=Rubik+Mono+One&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --font-title: "Archivo Black", serif;
+  --font-content: "Noto Sans", sans-serif;
+  --line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* these are specific to different browsers */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  /*   background-color: #f5e7d0; */
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(36, 36, 36);
+  margin: 40px;
+  padding: 0;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+p {
+  font-family: var(--font-content);
+  text-align: center;
+  font-weight: 600;
+}
+
+.title {
+  padding: 20px;
+  background-color: rgb(172, 1, 1);
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px white;
+}
+
+.textbox {
+  /* background-color: white; */
+  padding: 10px;
+  color: white;
+  text-shadow: 1px 1px 15px rgb(172, 1, 1);
+}
+
+
+
+
+.elements {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* min-height: 100vh; */
+  margin: 0;
+  padding: 50px;
+  width: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.shape {
+  flex: 1 1 auto;
+  /* margin-bottom: 50px; */
+}
+
+.shape img {
+  width: 300px;
+  padding: 50px;
+}
+
+#spider,
+#strange,
+#wanda {
+  display: block;
+}
+
+
+
+/* MEDIA QUERY (MOBILE) */
+
+
+@media only screen and (max-width: 1000px) {
+  .elements {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
